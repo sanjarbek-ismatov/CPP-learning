@@ -1,6 +1,6 @@
 #include <iostream>
-#include<cstring>
-#include "main.h"
+#include <cstring>
+#include <string>
 
 #define number int
 
@@ -36,12 +36,18 @@ public:
     static char name[10];
     static int age;
 };
+namespace nameSpace{
+    int age = 19;
+}
+
 int Person::age = 10;
 char Person::name[] = "Sanjarbek";
+
+
 int main()
 {
-    scope();
-    Person me;
-    std::cout << me.age << " " << me.name << std::endl;
+    std::string name = "Sanjarbek";
+    name.length();
+    std::cout << name.length() << std::endl;
     return 0;
 }
